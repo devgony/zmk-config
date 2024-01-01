@@ -7,8 +7,6 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
-#defind MGOC(k1,k2,k3) &mt RGUI k1 &mt RALT k2 &mt RCTRL k3
 
 / {
     behaviors {
@@ -44,7 +42,7 @@
             &mt LSHFT A &kp S      &kp D     &lt 3 F   &kp G           &kp H      &kp J      &kp K      &kp L       &mt RSHFT SQT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &mt LCTRL Z &kp X      &kp C      &kp V     &kp B          &kp N      &kp M      MGOC(COMMA,DOT,       FSLH)
+            &mt LCTRL Z &kp X      &kp C      &kp V     &kp B          &kp N      &kp M      &mt RCMD COMMA &mt RALT DOT &mt RCTL FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &mt LALT BSPC &mt LCMD SPC &lt 1 F18  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
