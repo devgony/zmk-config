@@ -35,7 +35,7 @@
             &mt LSHFT A &kp S      &kp D     &lt 3 F   &kp G           &kp H      &kp J      &kp K      &kp L       &mt RSHFT SEMI 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &mt LCTRL Z &kp X      &kp C      &kp V     &kp B          &kp N      &kp M      &mt RCMD COMMA &mt RALT DOT &mt RCTL FSLH
+            &mt LCTRL Z &kp X      &kp C      &kp V     &kp B          &kp N      &kp M      &mt LCMD COMMA &mt RALT DOT &mt RCTL FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &mt LALT BSPC &mt LCMD SPC &lt 1 F18  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
