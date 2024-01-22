@@ -40,28 +40,26 @@
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp LALT>
-                , <&macro_tap &kp LARW>
+                , <&kp LARW>
                 , <&macro_release &kp LALT>
                 ;
-        );
+        )
         ZMK_MACRO(D_X4,
             compatible = "zmk,behavior-macro";
-            bindings
-                = <&macro_tap &kp DARW &kp DARW &kp DARW &kp DARW>;
-        );
+            bindings = <&kp DARW &kp DARW &kp DARW &kp DARW>;
+        )
         ZMK_MACRO(U_X4,
             compatible = "zmk,behavior-macro";
-            bindings
-                = <&macro_tap &kp UARW &kp UARW &kp UARW &kp UARW>;
-        );
+            bindings = <&kp UARW &kp UARW &kp UARW &kp UARW>;
+        )
         ZMK_MACRO(R_W, 
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp RARW>
+                , <&kp RARW>
                 , <&macro_release &kp RALT>
                 ;
-        );
+        )
     };
 
     keymap {
