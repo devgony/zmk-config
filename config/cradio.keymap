@@ -36,32 +36,32 @@
     };
 
     macros {
-        L_W: L_W {
+        ZMK_MACRO(L_W,
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp LARW>
                 , <&macro_release &kp LALT>
                 ;
-        };
-        D_X4: D_X4 {
+        );
+        ZMK_MACRO(D_X4,
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_tap &kp DARW &kp DARW &kp DARW &kp DARW>;
-        };
-        U_X4: U_X4 {
+        );
+        ZMK_MACRO(U_X4,
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_tap &kp UARW &kp UARW &kp UARW &kp UARW>;
-        };
-        R_W: R_W {
+        );
+        ZMK_MACRO(R_W, 
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp RALT>
                 , <&macro_tap &kp RARW>
                 , <&macro_release &kp RALT>
                 ;
-        };
+        );
     };
 
     keymap {
