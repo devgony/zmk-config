@@ -35,6 +35,35 @@
         };
     };
 
+    macros {
+        L_W: L_W {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LARW>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        D_X4: D_X4 {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_tap &kp DARW &kp DARW &kp DARW &kp DARW>;
+        };
+        U_X4: U_X4 {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_tap &kp UARW &kp UARW &kp UARW &kp UARW>;
+        };
+        R_W: R_W {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp RARW>
+                , <&macro_release &kp RALT>
+                ;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -80,7 +109,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
         //  &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
+            &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &L_W       &D_X4      &U_X4      &R_W       F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
         //  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
