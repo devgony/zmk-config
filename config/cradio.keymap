@@ -41,26 +41,26 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&kp LARW>
+                , <&kp LEFT>
                 , <&macro_release &kp LALT>
                 ;
         };
         D_X4: D_X4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DARW &kp DARW &kp DARW &kp DARW>;
+            bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
         };
         U_X4: U_X4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp UARW &kp UARW &kp UARW &kp UARW>;
+            bindings = <&kp UP &kp UP &kp UP &kp UP>;
         };
         R_W: R_W {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&kp RARW>
+                , <&kp RIGHT>
                 , <&macro_release &kp LALT>
                 ;
         };
