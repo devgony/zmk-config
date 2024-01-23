@@ -42,17 +42,17 @@
                 <&kp LALT &kp LEFT>,
                 <&macro_release>,
                 <&kp LALT>;
-        );
+        )
 
         ZMK_MACRO(D_X4,
             compatible = "zmk,behavior-macro";
             bindings = <&kp DOWN &kp DOWN &kp DOWN &kp DOWN>;
-        );
+        )
 
         ZMK_MACRO(U_X4,
             compatible = "zmk,behavior-macro";
             bindings = <&kp UP &kp UP &kp UP &kp UP>;
-        );
+        )
 
         ZMK_MACRO(R_W,
             compatible = "zmk,behavior-macro";
@@ -61,7 +61,7 @@
                 <&kp LALT &kp RIGHT>,
                 <&macro_release>,
                 <&kp LALT>;
-        );
+        )
     };
 
     keymap {
