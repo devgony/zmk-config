@@ -55,13 +55,13 @@
             #binding-cells = <0>;
             bindings = <&kp UARW &kp UARW &kp UARW &kp UARW>;
         };
-        R_W: R_W, {
+        R_W: R_W {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RALT>
+                = <&macro_press &kp LALT>
                 , <&kp RARW>
-                , <&macro_release &kp RALT>
+                , <&macro_release &kp LALT>
                 ;
         };
     };
