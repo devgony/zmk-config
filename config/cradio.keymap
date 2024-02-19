@@ -1,8 +1,8 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -40,7 +40,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT &kp LEFT>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LEFT>,
                 <&macro_release>,
                 <&kp LALT>;
         };
@@ -62,7 +64,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT &kp RIGHT>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp RIGHT>,
                 <&macro_release>,
                 <&kp LALT>;
         };
