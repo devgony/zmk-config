@@ -46,14 +46,14 @@
             bindings = <&vim_cb>;
             key-positions = <22 24>;
             layers = <2>;
-            timeout-ms = <500>;
+            timeout-ms = <1000>;
         };
 
         vim_cw {
             bindings = <&vim_cw>;
             key-positions = <22 1>;
             layers = <2>;
-            timeout-ms = <500>;
+            timeout-ms = <1004>;
         };
     };
 
