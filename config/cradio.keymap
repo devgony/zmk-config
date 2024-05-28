@@ -81,6 +81,8 @@
                 <&macro_tap>,
                 <&kp HOME>,
                 <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
                 <&kp DEL>;
 
             label = "VIM_C";
