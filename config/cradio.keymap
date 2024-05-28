@@ -22,6 +22,15 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        tap_vim_cc: tap_vim_cc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_VIM_CC";
+            #binding-cells = <0>;
+            bindings = <&none>, <&vim_cc>;
+
+            tapping-term-ms = <50>;
+        };
     };
 
     combos {
@@ -31,13 +40,6 @@
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp ESC>;
-        };
-
-        combo_vim_cc {
-            timeout-ms = <50>;
-            key-positions = <22 23>;
-            bindings = <&vim_cc>;
-            layers = <2>;
         };
     };
 
@@ -135,10 +137,10 @@
 
         move {
             bindings = <
-&kp F1  &kp F2   &kp F3  &kp F4  &kp F5    &L_W      &D_X4      &U_X4      &R_W       &kp F11
-&mo 4   &kp TAB  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &kp DEL  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                         &trans  &trans    &trans    &trans
+&kp F1  &kp F2   &kp F3       &kp F4  &kp F5    &L_W      &D_X4      &U_X4      &R_W       &kp F11
+&mo 4   &kp TAB  &trans       &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &kp DEL  &tap_vim_cc  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                              &trans  &trans    &trans    &trans
             >;
         };
 
