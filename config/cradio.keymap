@@ -42,16 +42,18 @@
             bindings = <&kp ESC>;
         };
 
-        vim_db {
-            bindings = <&vim_db>;
-            key-positions = <12 24>;
+        vim_cb {
+            bindings = <&vim_cb>;
+            key-positions = <22 24>;
             layers = <2>;
+            timeout-ms = <500>;
         };
 
-        vim_dw {
-            bindings = <&vim_dw>;
-            key-positions = <12 1>;
+        vim_cw {
+            bindings = <&vim_cw>;
+            key-positions = <22 1>;
             layers = <2>;
+            timeout-ms = <500>;
         };
     };
 
@@ -125,7 +127,7 @@
             label = "VIM_CC";
         };
 
-        vim_db: vim_db {
+        vim_cb: vim_db {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -139,7 +141,7 @@
             label = "VIM_DB";
         };
 
-        vim_dw: vim_dw {
+        vim_cw: vim_dw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -177,7 +179,7 @@
 
         move {
             bindings = <
-&kp F1  &R_W     &kp F3       &kp F4  &kp F5    &L_W      &D_X4      &U_X4      &R_W       &kp F11
+&trans  &R_W     &trans       &trans  &trans    &L_W      &D_X4      &U_X4      &R_W       &trans
 &mo 4   &kp TAB  &trans       &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans  &kp DEL  &tap_vim_cc  &trans  &L_W      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
                               &trans  &trans    &trans    &trans
@@ -186,10 +188,10 @@
 
         fn {
             bindings = <
-&sys_reset  &trans  &trans  &bootloader  &bt BT_SEL 0    &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
-&trans      &trans  &trans  &trans       &bt BT_SEL 1    &mkp MB3      &trans        &trans      &trans        &trans
-&trans      &trans  &trans  &bt BT_CLR   &bt BT_SEL 2    &trans        &trans        &trans      &trans        &trans
-                            &trans       &trans          &mkp MB1      &mkp MB2
+&sys_reset  &kp F2  &kp F11  &bootloader  &bt BT_SEL 0    &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
+&trans      &trans  &trans   &trans       &bt BT_SEL 1    &mkp MB3      &trans        &trans      &trans        &trans
+&trans      &trans  &trans   &bt BT_CLR   &bt BT_SEL 2    &trans        &trans        &trans      &trans        &trans
+                             &trans       &trans          &mkp MB1      &mkp MB2
             >;
         };
 
