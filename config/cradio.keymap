@@ -35,8 +35,9 @@
 
         combo_vim_cc {
             timeout-ms = <50>;
-            key-positions = <22 22>;
+            key-positions = <22 23>;
             bindings = <&vim_cc>;
+            layers = <2>;
         };
     };
 
