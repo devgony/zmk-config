@@ -35,7 +35,7 @@
 
         vim_cc {
             bindings = <&vim_cc>;
-            key-positions = <22 23>;
+            key-positions = <22 22>;
             layers = <2>;
         };
     };
