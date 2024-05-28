@@ -41,6 +41,18 @@
             key-positions = <16 17>;
             bindings = <&kp ESC>;
         };
+
+        vim_db {
+            bindings = <&vim_db>;
+            key-positions = <12 24>;
+            layers = <2>;
+        };
+
+        vim_dw {
+            bindings = <&vim_dw>;
+            key-positions = <12 1>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -112,6 +124,34 @@
 
             label = "VIM_CC";
         };
+
+        vim_db: vim_db {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp BSPC>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "VIM_DB";
+        };
+
+        vim_dw: vim_dw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp DEL>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "VIM_DW";
+        };
     };
 
     keymap {
@@ -137,9 +177,9 @@
 
         move {
             bindings = <
-&kp F1  &kp F2   &kp F3       &kp F4  &kp F5    &L_W      &D_X4      &U_X4      &R_W       &kp F11
+&kp F1  &R_W     &kp F3       &kp F4  &kp F5    &L_W      &D_X4      &U_X4      &R_W       &kp F11
 &mo 4   &kp TAB  &trans       &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &kp DEL  &tap_vim_cc  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+&trans  &kp DEL  &tap_vim_cc  &trans  &L_W      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
                               &trans  &trans    &trans    &trans
             >;
         };
