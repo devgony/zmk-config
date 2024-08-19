@@ -180,7 +180,7 @@
         move {
             bindings = <
 &trans  &R_W     &trans       &trans  &trans    &L_W      &D_X4      &U_X4      &R_W       &trans
-&mo 4   &kp TAB  &trans       &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &kp TAB  &trans       &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans  &kp DEL  &tap_vim_cc  &trans  &L_W      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
                               &trans  &trans    &trans    &trans
             >;
