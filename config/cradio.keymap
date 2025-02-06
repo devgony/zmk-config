@@ -66,9 +66,9 @@
             layers = <0>;
         };
 
-        TG1 {
+        TG0 {
             bindings = <&tog 0>;
-            key-positions = <32 33>;
+            key-positions = <32 25>;
             layers = <4>;
             timeout-ms = <50>;
         };
@@ -214,10 +214,10 @@
 
         pointing {
             bindings = <
-&trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans          &trans          &trans        &trans           &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans  &trans          &trans          &trans           &trans    &mkp MB3        &trans          &trans        &trans           &trans
-                                        &trans           &trans    &mkp MB1        &mkp MB2
+&none  &none           &mmv MOVE_UP    &none            &none    &none           &none           &none         &none            &none
+&none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&none  &none           &none           &none            &none    &mkp MB3        &none           &none         &none            &none
+                                       &none            &none    &mkp MB1        &mkp MB2
             >;
         };
     };
