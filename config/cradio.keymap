@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Home row mods macro
 // #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -55,7 +56,21 @@
             bindings = <&vim_cw>;
             key-positions = <22 1>;
             layers = <2>;
-            timeout-ms = <1004>;
+            timeout-ms = <1000>;
+        };
+
+        TG4 {
+            bindings = <&tog 4>;
+            key-positions = <32 33>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        TG1 {
+            bindings = <&tog 0>;
+            key-positions = <32 33>;
+            layers = <4>;
+            timeout-ms = <50>;
         };
     };
 
@@ -190,19 +205,19 @@
 
         fn {
             bindings = <
-&sys_reset  &kp F2          &kp F11  &bootloader  &bt BT_SEL 0    &kp C_BRI_DN  &kp C_BRI_UP    &kp C_MUTE      &kp C_VOL_DN     &kp C_VOL_UP
-&trans      &trans          &trans   &trans       &bt BT_SEL 1    &mkp MB3      &trans          &mmv MOVE_UP    &trans           &trans
-&trans      &studio_unlock  &kp Z    &bt BT_CLR   &bt BT_SEL 2    &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-                                     &trans       &trans          &mkp MB1      &mkp MB2
+&sys_reset  &kp F2  &kp F11  &bootloader  &bt BT_SEL 0    &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
+&trans      &trans  &trans   &trans       &bt BT_SEL 1    &mkp MB3      &trans        &trans      &trans        &trans
+&trans      &trans  &trans   &bt BT_CLR   &bt BT_SEL 2    &trans        &trans        &trans      &trans        &trans
+                             &trans       &trans          &mkp MB1      &mkp MB2
             >;
         };
 
-        vim_upper {
+        pointing {
             bindings = <
-&trans  &trans         &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp BACKSPACE  &vim_C  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans    &trans  &trans
+&trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans          &trans          &trans        &trans           &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &trans          &trans          &trans           &trans    &mkp MB3        &trans          &trans        &trans           &trans
+                                        &trans           &trans    &mkp MB1        &mkp MB2
             >;
         };
     };
