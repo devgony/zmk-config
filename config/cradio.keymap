@@ -216,7 +216,7 @@
             bindings = <
 &none      &none           &mmv MOVE_UP    &none            &none     &mkp MB3        &none           &none         &none            &none
 &kp LSHFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp RSHFT
-&trans     &none           &trans          &trans           &none     &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &kp RCTRL
+&trans     &trans          &trans          &trans           &trans    &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &kp RCTRL
                                            &trans           &trans    &mkp MB1        &mkp MB2
             >;
         };
