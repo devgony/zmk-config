@@ -13,7 +13,7 @@
 
 // Mouse pointer speed 2x (default time-to-max-speed-ms is 300)
 &mmv {
-    time-to-max-speed-ms = <150>;
+    time-to-max-speed-ms = <100>;
     acceleration-exponent = <1>;
 };
 
